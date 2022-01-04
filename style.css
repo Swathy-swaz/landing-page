@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+}
+
+body h1{
+    color: white;
+}
+body p{
+    color: grey;
+}
+
+
+
+header{
+    
+    background-image: url(./images/lost.svg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 10px 50px;
+    align-items: center;
+}
+
+.navbar ul{
+    flex: 1;
+    text-align: right;
+    padding-top: 2rem;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.logo {
+    width: 180px;
+}
+
+.row{
+    display:flex;
+    align-items: center;
+    padding-top: 5rem;
+   
+    
+}
+
+.header-c {
+    flex-basis: 50%;
+    padding: 5rem;
+    
+
+}
+.header-c h1{
+    font-size: 7vmin;
+    margin-bottom: 30px;
+    margin-top: 7rem;
+}
+.header-c p{
+    margin-bottom:10px ;
+}
+
+#menu{
+    position:fixed;
+    top: 1.5rem; right:1.5rem;
+    background:none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    z-index: 1000;
+    display: none;
+}
+/*
+@media(max-width:1200px) {
+    html{
+        font-size: %;
+    }
+    .home{
+        padding: 1rem 4rem;
+    }
+
+}
+whenever th device width reduce menu button arises
+@media(max-width:991px){
+    header{
+        left: -120%;
+    }
+    #menu{
+        display: block;
+    }
+
+    header.toggle{
+        left: 0;
+    }
+    body{
+        padding: 0;
+    }
+}
+
+
+.header-c, .code{ flex-bias.......}
+.code{
+    margin-left: 80px;
+}   */
+
+@media(max-width:991px){
+    header{
+        left: -120%;
+    }
+    #menu{
+        display: block;
+    }
+
+    header.toggle{
+        left: 0;
+    }
+    body{
+        padding: 0;
+    }
+}
+
+
+.Challenges{
+    margin-top: 80px;
+    
+}
+.container{
+    padding: 3rem;
+    display: flex;
+}
+
+.grid-wrapper, .content{
+    flex-basis: 50%;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+.grid-box{
+    background-color: rgb(9, 9, 10);
+    margin:10px ;
+    border-radius: 0.5rem;
+    
+    
+}
+.grid-wrapper img{
+    max-width: 60%;
+}
+.content h1{
+    padding-bottom: 3rem;
+}
