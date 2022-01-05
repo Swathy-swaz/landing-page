@@ -12,14 +12,17 @@ body{
     background-color: black;
 }
 
-body h1{
+body h1 ,h2,h4{
     color: white;
 }
 body p{
     color: grey;
 }
 
-
+span{
+    color: rgb(190, 62, 83);
+    font-weight: bold;
+}
 
 header{
     
@@ -61,11 +64,14 @@ header{
     display:flex;
     align-items: center;
     padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+
    
     
 }
 
-.header-c {
+.header-c, .code {
     flex-basis: 50%;
     padding: 5rem;
     
@@ -123,6 +129,13 @@ whenever th device width reduce menu button arises
 .code{
     margin-left: 80px;
 }   */
+.code{
+    margin-left: 10px;
+    text-align: right;
+} 
+.time{
+    color: palevioletred;
+}
 
 @media(max-width:991px){
     header{
@@ -170,3 +183,97 @@ whenever th device width reduce menu button arises
 .content h1{
     padding-bottom: 3rem;
 }
+
+
+
+.register{
+    font-size: 20px;
+    background-image: url("images/mobile.svg");
+    background-size: cover;
+    height: 100vh;
+    color:rgb(214, 195, 173);
+}
+
+.register .center{
+    position:relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.664);
+    border-radius: 10px;
+    
+}
+.center h1{
+    text-align: center;
+    /*padding : topbottom leftright*/  
+    padding: 2px;
+    border-bottom:2px solid silver;
+    margin: 35px;
+}
+.center form{
+    padding: 40px;
+}
+
+.center .texthe{
+    position: relative;
+    margin:10px 0px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid silver;
+}
+.center .texthe :hover{
+    color: black;
+    border-bottom: 2px solid black;
+    /*transition: ease-in 2s;*/
+
+}
+
+.texthe input {
+    background: transparent;
+    /*border: 2px solid white;*/
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 20px;
+    color:azure;
+    
+}
+
+.forpas a{
+    color: rgb(221, 211, 211);
+    text-decoration: none;
+    cursor:pointer ;
+
+}
+.forpas a:hover{
+    color: blue;
+    transition: ease-in 0.5s;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    background: rgba(245, 245, 245, 0.555);
+    border-radius: 10px;
+    border: black;
+    height:30px;
+    width: 100%;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+}
+input[type="submit"]:hover{
+    background: rgba(0, 0, 0, 0.37);
+    color:rgba(32, 9, 161, 0.815);
+}
+
+.signup{
+    font-size: 20px;
+    text-align: center;
+    color: silver;
+    padding-top: 20px;
+    
+}
+
+.texthe input:focus{
+    outline: none;
+}
+
